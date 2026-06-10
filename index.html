@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -164,31 +165,97 @@
 
     @keyframes spin { to { transform: rotate(360deg); } }
 
+    /* ── PC 기본값은 위 스타일 그대로 유지 ── */
+
     @media (max-width: 640px) {
-      body { word-break: keep-all; }
-      section { padding: 48px 16px; }
-      .wrap { padding: 0 16px; }
-      .section-head h2 { font-size: 22px; }
+      /* 전체 기본 */
+      body { word-break: keep-all; overflow-wrap: break-word; font-size: 16px; line-height: 1.75; }
+      section { padding: 52px 18px; }
+      .wrap { padding: 0 18px; }
+
+      /* 섹션 제목 */
+      .section-head h2 { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
+      .section-head p { font-size: 15px; line-height: 1.6; }
+
+      /* 네비 */
       .nav-menu { display: none; }
-      .nav-logo-text { font-size: 14px; }
-      .nav-cta { padding: 8px 12px; font-size: 12px; }
-      .hero { padding: 48px 16px 56px; }
-      .hero h1 { font-size: 22px; line-height: 1.45; }
-      .hero-desc { font-size: 14px; }
-      .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
-      .hero-stats { gap: 16px; }
+      .nav-logo-text { font-size: 15px; }
+      .nav-logo-sub { font-size: 11px; }
+      .nav-cta { padding: 10px 14px; font-size: 14px; }
+
+      /* 히어로 */
+      .hero { padding: 52px 18px 60px; }
+      .hero-badge { font-size: 13px; padding: 7px 16px; }
+      .hero h1 { font-size: 26px; line-height: 1.45; font-weight: 700; }
+      .hero-desc { font-size: 15px; line-height: 1.75; }
+      .hero-tags { gap: 8px; }
+      .hero-tag { font-size: 13px; padding: 6px 14px; }
+      .hero-actions { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .btn { font-size: 16px; padding: 14px 24px; }
+      .hero-phone { font-size: 17px; }
+      .hero-stats { gap: 18px; flex-wrap: wrap; padding-top: 24px; }
+      .hero-stat-val { font-size: 26px; }
+      .hero-stat-label { font-size: 13px; }
       .divider-v { display: none; }
-      .main-services { grid-template-columns: 1fr; }
-      .fund-grid { grid-template-columns: 1fr; }
-      .process-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+      /* 주요 서비스 */
+      .main-services { grid-template-columns: 1fr; gap: 14px; }
+      .main-svc { padding: 24px 18px; }
+      .main-svc h3 { font-size: 18px; margin-bottom: 10px; }
+      .main-svc p { font-size: 14px; line-height: 1.7; }
+      .main-svc ul li { font-size: 14px; line-height: 1.65; }
+
+      /* 정책자금 탭 */
+      .fund-tabs { gap: 8px; flex-wrap: wrap; }
+      .fund-tab { font-size: 14px; padding: 9px 18px; }
+      .fund-grid { grid-template-columns: 1fr; gap: 12px; }
+      .fund-card h4 { font-size: 15px; margin-bottom: 7px; }
+      .fund-card .fund-limit { font-size: 13px; margin-bottom: 7px; }
+      .fund-card p { font-size: 13px; line-height: 1.65; }
+      .fund-card .fund-rate span:first-child { font-size: 12px; }
+      .fund-card .fund-rate strong { font-size: 16px; }
+
+      /* 프로세스 */
+      .process-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .process-grid::before { display: none; }
-      .cases-grid { grid-template-columns: 1fr; }
-      .form-row { grid-template-columns: 1fr; }
-      .form-card { padding: 20px 16px; }
-      .ceo-inner { gap: 24px; }
-      .float-cta { bottom: 16px; right: 12px; gap: 8px; }
-      .float-btn { padding: 11px 14px; font-size: 13px; }
-      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .process-num { width: 40px; height: 40px; font-size: 16px; }
+      .process-step h4 { font-size: 15px; }
+      .process-step p { font-size: 13px; line-height: 1.5; }
+
+      /* 성공사례 */
+      .cases-grid { grid-template-columns: 1fr; gap: 14px; }
+      .case-amount { font-size: 24px; }
+      .case-desc { font-size: 14px; line-height: 1.7; }
+
+      /* 대표 소개 */
+      .ceo-section { padding: 52px 18px; }
+      .ceo-inner { gap: 24px; flex-direction: column; }
+      .ceo-info h3 { font-size: 22px; }
+      .ceo-info .ceo-title { font-size: 14px; }
+      .ceo-info p { font-size: 14px; line-height: 1.8; }
+      .ceo-contact-item { font-size: 14px; }
+
+      /* 폼 */
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      .form-card { padding: 24px 18px; }
+      .form-group label { font-size: 14px; margin-bottom: 8px; }
+      input, select, textarea { font-size: 15px; padding: 12px 14px; }
+      .form-submit { font-size: 17px; padding: 16px; }
+
+      /* FAQ */
+      .faq-wrap { padding: 0; }
+      .faq-item { padding: 18px; }
+      .faq-q { font-size: 15px; margin-bottom: 10px; }
+      .faq-a { font-size: 14px; line-height: 1.75; }
+
+      /* 플로팅 버튼 */
+      .float-cta { bottom: 16px; right: 12px; gap: 10px; }
+      .float-btn { padding: 13px 18px; font-size: 15px; }
+
+      /* 푸터 */
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .footer-name { font-size: 16px; }
+      .footer-info { font-size: 14px; line-height: 2; }
     }
   </style>
 </head>
@@ -657,7 +724,7 @@
 </div>
 
 <script>
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwfCfJ3WWPi3BQq1ffsEYk-eCs2U6_ii_TZUw2ZGFJd262a7thWQcZv-XnzJ9tEzGuz/exec';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwUg5njmDxOWC4892-2XbmhQ0ERBrpqvxSMNp5r4dyYtO6W8a-ZmaXXWfhaFfqHyMwmiA/exec';
 
   function switchTab(btn, tabId) {
     document.querySelectorAll('.fund-tab').forEach(t => t.classList.remove('active'));
