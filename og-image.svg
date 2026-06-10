@@ -1,0 +1,70 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1c4d"/>
+      <stop offset="55%" style="stop-color:#1B2B6B"/>
+      <stop offset="100%" style="stop-color:#2a3f99"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 장식 원 -->
+  <circle cx="1080" cy="100" r="240" fill="rgba(200,137,42,0.07)"/>
+  <circle cx="120" cy="560" r="180" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- 골드 상단 라인 -->
+  <rect x="0" y="0" width="1200" height="5" fill="#C8892A"/>
+
+  <!-- 좌측 강조 바 -->
+  <rect x="80" y="160" width="6" height="130" rx="3" fill="#C8892A"/>
+
+  <!-- 로고 박스 -->
+  <rect x="100" y="75" width="56" height="56" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="128" y="113" font-size="26" text-anchor="middle" fill="white" font-family="sans-serif">🏢</text>
+
+  <!-- 업체명 -->
+  <text x="172" y="100" font-size="24" fill="rgba(255,255,255,0.7)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="400">한국소상공인 파트너스</text>
+  <text x="172" y="126" font-size="18" fill="#C8892A" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="500">Business Management</text>
+
+  <!-- 메인 타이틀 -->
+  <text x="100" y="230" font-size="50" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">사업의 성장, 파트너가</text>
+  <text x="100" y="296" font-size="50" fill="#fbbf24" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">처음부터 끝까지 함께합니다</text>
+
+  <!-- 3대 서비스 태그 -->
+  <rect x="100" y="328" width="230" height="40" rx="20" fill="rgba(255,255,255,0.12)"/>
+  <text x="215" y="354" font-size="20" text-anchor="middle" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif"># 정부지원 정책자금</text>
+
+  <rect x="348" y="328" width="240" height="40" rx="20" fill="rgba(255,255,255,0.12)"/>
+  <text x="468" y="354" font-size="20" text-anchor="middle" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif"># 법인설립 및 법인전환</text>
+
+  <rect x="606" y="328" width="240" height="40" rx="20" fill="rgba(255,255,255,0.12)"/>
+  <text x="726" y="354" font-size="20" text-anchor="middle" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif"># 벤처인증 및 각종인증</text>
+
+  <!-- 구분선 -->
+  <line x1="100" y1="400" x2="1100" y2="400" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- 통계 -->
+  <text x="140" y="460" font-size="38" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">1,500+</text>
+  <text x="140" y="495" font-size="19" fill="rgba(255,255,255,0.55)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">누적 지원 건수</text>
+
+  <line x1="340" y1="420" x2="340" y2="510" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <text x="378" y="460" font-size="38" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">1,200억+</text>
+  <text x="378" y="495" font-size="19" fill="rgba(255,255,255,0.55)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">총 지원금액</text>
+
+  <line x1="610" y1="420" x2="610" y2="510" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <text x="648" y="460" font-size="38" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">96%</text>
+  <text x="648" y="495" font-size="19" fill="rgba(255,255,255,0.55)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">고객 만족도</text>
+
+  <line x1="820" y1="420" x2="820" y2="510" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- CTA 버튼 -->
+  <rect x="860" y="430" width="270" height="58" rx="29" fill="#C8892A"/>
+  <text x="995" y="466" font-size="23" text-anchor="middle" fill="white" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-weight="700">무료 자금진단 신청</text>
+
+  <!-- 대표 정보 -->
+  <text x="600" y="575" font-size="21" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">박주은 대표 · 부산광역시 부산진구 신암로 9, 5F · 010-4207-0253</text>
+</svg>
